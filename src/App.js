@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Header from "./componenten/Header";
+import DeliveryList from './componenten/DeliveryList';
+
+// import { FaBeer } from 'react-icons/fa';
+// import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
+// class Question extends React.Component {
+//   render() {
+//     return <h3> Lets go for a <FaBeer />? </h3>
+//   }
+// }
+// class Question extends React.Component {
+//   render() {
+//     return <h3> Lets go for a <FaBeer />? </h3>
+//   }
+// }
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header/>
+      <h1>Delivery Tracking</h1>
+      <DeliveryList/>
+    </>
   );
 }
 
